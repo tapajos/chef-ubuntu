@@ -14,6 +14,7 @@
     }
   },
   "recipes": [
+    "openssh",
     "build-essential",
     "git",
     "users",
