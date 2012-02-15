@@ -1,4 +1,13 @@
 {
+  "users": {
+      "tapajos": {
+        "password": "$1$gSuvQC02$jM0TQSQuRXGddnzD9Fpp30",
+        "comment": "Marcos Tapajos"
+      }
+  },
+  "ssh_keys": {
+      "tapajos": "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEApobPicMMuEwmmj5sYnaoz/Cf+phO+ey6Ey0rwCCh1MlXbPyyGa4vemyWdDmfk/x/UDrZagI62feyaX9BnKaSkvBU99qOhUPsQzmcQ/ceYd26N/SgZwj9G54H23IXsAl0kzuGqnkmezMPbFAP2C4OgZn7qiXIXayTd8IO5c49jh4gn2eV7dWXGHWlWvmcgAXK+Omr6ZgGVpGfgHDgnrjUtcth1cmrX2jPmLz7/pxMSGpC7vXHZ6XL+oRRsmgU/ysb4LRoXwyvkbCiTL1UehGuyerB3SfX/3n1AWtNFSi7uduYN1wZ4dXt5wW8UoQyT5llQL7zbxvkb1P37gPdp0hr6w== tapajos@tapajos"
+  },
   "authorization": {
     "sudo": {
       "users": ["tapajos"]
@@ -7,6 +16,7 @@
   "recipes": [
     "build-essential",
     "git",
-	"ruby-1.9.3"
+    "users",
+  	"ruby-1.9.3"
   ]
 }
