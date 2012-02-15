@@ -1,4 +1,8 @@
 {
+  "mysql": {
+    "server_root_password":  "root",
+    "bind_address": "127.0.0.1"
+  },
   "users": {
       "tapajos": {
         "password": "$1$gSuvQC02$jM0TQSQuRXGddnzD9Fpp30",
@@ -14,11 +18,12 @@
     }
   },
   "recipes": [
+    "users",
     "openssh",
     "build-essential",
     "git",
-    "users",
-  	"ruby-1.9.3",
-    "mysql::client"
+    "mysql::client",
+    "mysql::server",
+  	"ruby-1.9.3"
   ]
 }
