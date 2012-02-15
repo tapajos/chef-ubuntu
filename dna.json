@@ -14,7 +14,8 @@
   },
   "authorization": {
     "sudo": {
-      "users": ["tapajos"]
+      "users": ["tapajos"],
+      "passwordless": true
     }
   },
   "recipes": [
