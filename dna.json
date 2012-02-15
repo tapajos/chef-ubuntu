@@ -1,0 +1,12 @@
+{
+  "authorization": {
+    "sudo": {
+      "users": ["tapajos"]
+    }
+  },
+  "recipes": [
+    "build-essential",
+    "git",
+	"ruby-1.9.3"
+  ]
+}
