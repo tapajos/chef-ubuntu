@@ -1,11 +1,10 @@
 arch = (node['kernel']['machine'] == "x86_64") ? "amd64" : "i386"
 
-package "libffi5" do
+package "libyaml-0-2" do
   action :install
-  provider Chef::Provider::Package::Apt
 end
 
-package "libyaml-0-2" do
+package "libssl0.9.8" do
   action :install
 end
 
