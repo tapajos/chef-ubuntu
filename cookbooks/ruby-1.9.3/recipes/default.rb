@@ -18,13 +18,14 @@ end
   "ruby1.9.1-full_1.9.3.0-1_all",
   "ruby1.9.3_1.9.3.0-1_all"
 ].each do |package|
+  file_path = "/tmp/#{package}.deb"
   remote_file package do
-    path "/tmp/#{package}.deb"
+    path file_path
     source "https://github.com/tapajos/ruby-1.9.3-ubuntu-lucid/raw/master/#{arch}/#{package}.deb"
-  end
+  end if !File.exists?(file_path)
   package package do
     action :install
-    source "/tmp/#{package}.deb"
+    source file_path
     provider Chef::Provider::Package::Dpkg
   end
 end
