@@ -30,6 +30,6 @@ end
 end
 
 execute "update-alternatives" do
-  command "update-alternatives --install /usr/bin/ruby ruby /usr/bin/ruby1.9.3 400 --slave /usr/share/man/man1/ruby.1.gz ruby.1.gz /usr/share/man/man1/ruby1.9.3.1.gz --slave /usr/bin/ri ri /usr/bin/ri1.9.3 --slave /usr/bin/irb irb /usr/bin/irb1.9.3 --slave /usr/bin/rdoc rdoc /usr/bin/rdoc1.9.3"
-  command "update-alternatives --install /usr/bin/gem gem /usr/bin/gem1.9.3 400"
+  command "ln -sf /usr/bin/gem1.9.3 /etc/alternatives/gem && ln -sf /usr/bin/rdoc1.9.3 /etc/alternatives/rdoc && ln -sf /usr/bin/rake1.9.3 /etc/alternatives/rake && ln -sf /usr/bin/erb1.9.3 /etc/alternatives/erb && ln -sf /usr/bin/ri1.9.3 /etc/alternatives/ri && ln -sf /usr/bin/ruby1.9.3 /etc/alternatives/ruby && ln -sf /usr/bin/irb1.9.3 /etc/alternatives/irb"
+  action :run
 end
